@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发现</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<nav>
+			<div class="nav-change-two">
+				<ul>
+					<li class="nav-change-two-active">推荐</li>
+					<li>分类</li>
+				</ul>
+			</div>
+		</nav>
+		<header>
+			<div class="nav-footer">
+				<ul>
+					<li>
+						<a href="index.html"><span><i class="iconfont icon-fangzihouse128"></i></span>
+							<p>漫画</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;"><span><i class="iconfont icon-faxian nav-icon-active"></i></span>
+							<p>发现</p>
+						</a>
+					</li>
+					<li>
+						<a href="world.html"><span><i class="iconfont icon-chat01"></i></span>
+							<p>世界</p>
+						</a>
+					</li>
+					<li>
+						<a href="user.html"><span><i class="iconfont icon-yonghu"></i></span>
+							<p>我的</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<ul class="container-all">
+			<li class="container-left">
+				<article class="container">
+					<section>
+						<figure id="full_feature" class="swipslider">
+							<ul class="sw-slides">
+								<li class="sw-slide">
+									<img src="img/1.png" alt="">
+								</li>
+								<li class="sw-slide">
+									<img src="img/2.png" alt="">
+								</li>
+								<li class="sw-slide">
+									<img src="img/3.png" alt="">
+								</li>
+								<li class="sw-slide">
+									<img src="img/4.png" alt="">
+								</li>
+							</ul>
+						</figure>
+
+					</section>
+				</article>
+				<div class="content-list">
+					<ul>
+						<a href="">
+							<li><img src="img/one.png"></li>
+						</a>
+						<a href="">
+							<li><img src="img/two.png"></li>
+						</a>
+						<a href="">
+							<li><img src="img/three.png"></li>
+						</a>
+						<a href="">
+							<li><img src="img/four.png"></li>
+						</a>
+					</ul>
+				</div>
+				<article class="hot-recommend">
+					<h4>热门推荐</h4>
+					<ul class="hot-recommend-list">
+						<li>
+							<a href="">
+								<figure><img src="img/hot1.png">
+									<figcaption>悲伤的拳头</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<figure><img src="img/hot2.png">
+									<figcaption>狼族少年</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<figure><img src="img/hot3.png">
+									<figcaption>搜神记</figcaption>
+								</figure>
+							</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</article>
+			</li>
+			<li class="container-right">
+				<div></div>
+				<ul class="all-type">
+					<li class="type-active">全部</li>
+					<li>少年</li>
+					<li>奇幻</li>
+					<li>日漫</li>
+					<li>都市</li>
+					<li>古风</li>
+					<li>爆笑</li>
+				</ul>
+			</li>
+		</ul>
+		<a href="javascript:scroll(0,0)">
+			<div class="return-top"><span><i class="iconfont icon-top"></i></span></div>
+		</a>
+		<div class="c-bottom"></div>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="dist/swipeslider.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+			});
+		</script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#full_feature').swipeslider({
+					transitionDuration: 1000,
+					autoPlayTimeout: 2000,
+				});
+			});
+			$('.nav-change-two li').click(function() {
+				if($(this).hasClass('nav-change-two-active')) {
+
+				} else {
+					$('.nav-change-two li').removeClass('nav-change-two-active');
+					$(this).addClass('nav-change-two-active');
+					var eqi = $(this).index();
+					var box_W = $('.container-left').width();
+					$('.container-all').css({
+						'marginLeft': -box_W * eqi
+					});
+				}
+			});
+			$('.all-type li').click(function(){
+				$('.all-type li').removeClass('type-active');
+				$(this).addClass('type-active');
+			});
+		</script>
+		<script type="text/javascript" src="font/iconfont.js"></script>
+	</body>
+
+</html>

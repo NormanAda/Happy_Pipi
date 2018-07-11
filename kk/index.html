@@ -1,416 +1,589 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>快看漫画</title>
-    <link href="font/iconfont.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/index.css" />
-    <header>
-    	<nav>
-    		<div class="nav">
-    			<ul>
-    				<li class="nav-present"><a href=""><img src="img/present.png"></a></li>
-    				<div class="nav-change">
-    					<ul>
-    					<li class="nav-change-active">关注</li>
-    					<li>热门</li>
-    					</ul>
-    				</div>
-    				<li>
-    					<a href=""><i class="iconfont icon-msnui-time-bold"></i></a>
-    					<a href=""><i class="iconfont icon-sousuo"></i></a>
-    				</li>
-    			</ul>
-    		</div>
-    		<div class="nav-tag">
-    			<p>
-    				<span class="nav-laba">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>快看漫画</title>
+		<link href="font/iconfont.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css" />
+
+		<body>
+			<header>
+				<nav>
+					<div class="nav">
+						<ul>
+							<li class="nav-present">
+								<a href=""><img src="img/present.png"></a>
+							</li>
+							<div class="nav-change">
+								<ul>
+									<li class="nav-change-active">关注</li>
+									<li>热门</li>
+								</ul>
+							</div>
+							<li>
+								<a href=""><i class="iconfont icon-msnui-time-bold"></i></a>
+								<a href=""><i class="iconfont icon-sousuo"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-tag">
+						<p>
+							<span class="nav-laba">
     					<i class="iconfont icon-laba"></i>
     				</span>人类，只有开启通知才不会错过更新提示
-    				<span class="nav-cuo">
+							<span class="nav-cuo">
     					<a href="">去开启</a>
     					<i class="iconfont icon-cuo"></i>
     				</span>
-    			</p>
-    	    </div>
-    	</nav>
-    	<div class="nav-footer">
-    		<ul>
-    			<li><a href=""><span><i class="iconfont icon-fangzihouse128 nav-icon-active"></i></span><p>漫画</p></a></li>
-    			<li><a href=""><span><i class="iconfont icon-faxian"></i></span><p>发现</p></a></li>
-    			<li><a href=""><span><i class="iconfont icon-chat01"></i></span><p>世界</p></a></li>
-    			<li><a href=""><span><i class="iconfont icon-yonghu"></i></span><p>我的</p></a></li>
-    		</ul>
-    	</div>
-    </header>
-    <div class="content-box-one">
-    	<div class="content">
-    		<div class="content-title">
-    			<a href=""><h3>吾皇在上</h3><p>更新<span>3</span>话<i class="iconfont icon-rightarrow"></i></p></a>
-    		</div>
-    		<div class="content-img"><img src="img/1.png"></div>
-    		<div class="content-tip">
-    			<a href=""><span>今天</span>
-    			<span>第24话&nbsp;&nbsp;凰炎王赤离</span>
-    			<span><i class="iconfont icon-zan"></i>33万</span>
-    			<span><i class="iconfont icon-duihaoqipao2"></i>1328</span></a>
-    		</div>
-    		<div class="content-tip">
-    			<a href=""><span class="last-day">昨天</span>
-    			<span>第23话&nbsp;&nbsp;你注定是我的大可爱</span>
-    			<span><i class="iconfont icon-zan"></i>46万</span>
-    			<span><i class="iconfont icon-duihaoqipao2"></i>4399</span></a>
-    		</div>
-    		<a href="">开始阅读</a>
-    	</div>
-    	<div class="content">
-    		<div class="content-title">
-    			<a href=""><h3>河神大人求收养</h3><p>更新<span>36</span>话<i class="iconfont icon-rightarrow"></i></p></a>
-    		</div>
-    		<div class="content-img"><img src="img/2.png"></div>
-    		<div class="content-tip">
-    			<a href=""><span>今天</span>
-    			<span>第46话&nbsp;&nbsp;我的顶头上司竟然是他</span>
-    			<span><i class="iconfont icon-zan"></i>33万</span>
-    			<span><i class="iconfont icon-duihaoqipao2"></i>1328</span></a>
-    		</div>
-    		<div class="content-tip">
-    			<a href=""><span class="last-day">6天前</span>
-    			<span>第45话&nbsp;&nbsp;烟消云散的世界</span>
-    			<span><i class="iconfont icon-zan"></i>46万</span>
-    			<span><i class="iconfont icon-duihaoqipao2"></i>4399</span></a>
-    		</div>
-    		<a href="">开始阅读</a>
-    	</div>
-    	
-    </div>
-    <div class="content-box-two">
-    	<div class="content-roll-tab-watch">
-    	<ul class="content-roll-tab">
-    		<li>周三</li>
-    		<li>周四</li>
-    		<li>周五</li>
-    		<li>周六</li>
-    		<li>周日</li>
-    		<li>昨天</li>
-    		<li class="content-roll-tab-active">今天</li>
-    	</ul>
-    	</div>
-    	<div class="content-roll-watch">
-    	<ul class="content-roll">
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
- 		
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
-    		<li>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">奇幻</span></a>
-    						<a href=""><h3>超能立方</h3></a>
-    						<a href=""><p>作者：水落声声</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/3.png"></div>
-                    <div class="content-footer">
-                    	<p>番外：天级功法</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    			<div class="hot-content">
-    				<ul class="content-roll-title">
-    					<li>
-    						<a href=""><span class="hot-tip">仙侠</span></a>
-    						<a href=""><h3>魔道祖师</h3></a>
-    						<a href=""><p>作者：子不语</p></a>
-    					</li>
-    					<li><a href="">全集<i class="iconfont icon-jiantou1"></i></a></li>
-    				</ul>
-                    <a class="content-roll-main" href=""><div ><img src="img/4.png"></div>
-                    <div class="content-footer">
-                    	<p>第79话：被美女争抢？</p>
-                    	<div>
-                    	    <span><i class="iconfont icon-zan"></i>33万</span>
-    			            <span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
-                        </div>
-                    </div></a>
-    			</div>
-    		</li>
-    		
-    		
-    		
-    	</ul>
-    	</div>
-    </div>
-    <div class="c-bottom"></div>
+						</p>
+					</div>
+				</nav>
+				<div class="nav-footer">
+					<ul>
+						<li>
+							<a href="javascript:;"><span><i class="iconfont icon-fangzihouse128 nav-icon-active"></i></span>
+								<p>漫画</p>
+							</a>
+						</li>
+						<li>
+							<a href="faxian.html"><span><i class="iconfont icon-faxian"></i></span>
+								<p>发现</p>
+							</a>
+						</li>
+						<li>
+							<a href="world.html"><span><i class="iconfont icon-chat01"></i></span>
+								<p>世界</p>
+							</a>
+						</li>
+						<li>
+							<a href="user.html"><span><i class="iconfont icon-yonghu"></i></span>
+								<p>我的</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content-box-one">
+				<div class="content">
+					<div class="content-title">
+						<a href="">
+							<h3>吾皇在上</h3>
+							<p>更新<span>3</span>话<i class="iconfont icon-rightarrow"></i></p>
+						</a>
+					</div>
+					<div class="content-img"><img src="img/1.png"></div>
+					<div class="content-tip">
+						<a href="javascript:;"><span>今天</span>
+							<span>第24话&nbsp;&nbsp;凰炎王赤离</span>
+							<span><i class="iconfont icon-zan"></i>33万</span>
+							<span><i class="iconfont icon-duihaoqipao2"></i>1328</span></a>
+					</div>
+					<div class="content-tip">
+						<a href="javascript:;"><span class="last-day">昨天</span>
+							<span>第23话&nbsp;&nbsp;你注定是我的大可爱</span>
+							<span><i class="iconfont icon-zan"></i>46万</span>
+							<span><i class="iconfont icon-duihaoqipao2"></i>4399</span></a>
+					</div>
+					<a href="">开始阅读</a>
+				</div>
+				<div class="content">
+					<div class="content-title">
+						<a href="">
+							<h3>河神大人求收养</h3>
+							<p>更新<span>36</span>话<i class="iconfont icon-rightarrow"></i></p>
+						</a>
+					</div>
+					<div class="content-img"><img src="img/2.png"></div>
+					<div class="content-tip">
+						<a href=""><span>今天</span>
+							<span>第46话&nbsp;&nbsp;我的顶头上司竟然是他</span>
+							<span><i class="iconfont icon-zan"></i>33万</span>
+							<span><i class="iconfont icon-duihaoqipao2"></i>1328</span></a>
+					</div>
+					<div class="content-tip">
+						<a href=""><span class="last-day">6天前</span>
+							<span>第45话&nbsp;&nbsp;烟消云散的世界</span>
+							<span><i class="iconfont icon-zan"></i>46万</span>
+							<span><i class="iconfont icon-duihaoqipao2"></i>4399</span></a>
+					</div>
+					<a href="">开始阅读</a>
+				</div>
 
-    
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="font/iconfont.js"></script>
-    <script type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   		});
-   		
-    </script>
-    <script>
-    	$(function(){
-    		$('.content-roll-tab li').click(function(){
-    			$('.content-roll-tab li').removeClass('content-roll-tab-active');
-    			$(this).addClass('content-roll-tab-active');
-   				var eqi=$(this).index();
-   				var roll_W=parseInt($('.content-roll>li').width());
-   				$('.content-roll').css({'marginLeft':-eqi*roll_W+'px'})
-   			});
-   			$('.nav-change li').click(function(){
-   				var eqx=$(this).index();
-   				$('.nav-change li').removeClass('nav-change-active');
-   				$(this).addClass('nav-change-active');
-   				console.log(eqx);
-   				if(eqx==0){
-   					$('.content-box-one').show();
-   					$('.content-box-two').hide();
-   				}else{
-   					$('.content-box-one').hide();
-   					$('.content-box-two').show();
-   				}
-   				
-   			})
-    	})
-    </script>
-</head>
-<body>
-	
-</body>
+			</div>
+			<div class="content-box-two">
+				<div class="content-roll-tab-watch">
+					<ul class="content-roll-tab">
+						<li>昨天</li>
+						<li class="content-roll-tab-active">今天</li>
+						<li>周三</li>
+						<li>周四</li>
+						<li>周五</li>
+						<li>周六</li>
+						<li>周日</li>
+					</ul>
+				</div>
+				<div class="content-roll-watch">
+					<ul class="content-roll">
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">奇幻</span></a>
+										<a href="">
+											<h3>超能立方</h3></a>
+										<a href="">
+											<p>作者：水落声声</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/3.png"></div>
+									<div class="content-footer">
+										<p>番外：天级功法</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="hot-content">
+								<ul class="content-roll-title">
+									<li>
+										<a href=""><span class="hot-tip">仙侠</span></a>
+										<a href="">
+											<h3>魔道祖师</h3></a>
+										<a href="">
+											<p>作者：子不语</p>
+										</a>
+									</li>
+									<li>
+										<a href="">全集<i class="iconfont icon-jiantou1"></i></a>
+									</li>
+								</ul>
+								<a class="content-roll-main" href="">
+									<div><img src="img/4.png"></div>
+									<div class="content-footer">
+										<p>第79话：被美女争抢？</p>
+										<div>
+											<span><i class="iconfont icon-zan"></i>33万</span>
+											<span><i class="iconfont icon-duihaoqipao2"></i>1328</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<a href="javascript:scroll(0,0)">
+				<div class="return-top"><span><i class="iconfont icon-top"></i></span></div>
+			</a>
+			<div class="c-bottom"></div>
+
+			<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="font/iconfont.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
+			<script type="text/javascript">
+				document.addEventListener('plusready', function() {
+					//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+				});
+			</script>
+			<script>
+				$(function() {
+					//  		日期切换
+					var nowday = new Date().getDay();
+					switch(nowday) {
+						case 0:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周一</li><li>周二</li><li>周三</li><li>周四</li><li>周五</li>');
+								break;
+							}
+						case 1:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周二</li><li>周三</li><li>周四</li><li>周五</li><li>周六</li>');
+								break;
+							}
+						case 2:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周三</li><li>周四</li><li>周五</li><li>周六</li><li>周日</li>');
+								break;
+							}
+						case 3:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周四</li><li>周五</li><li>周六</li><li>周日</li><li>周一</li>');
+								break;
+							}
+						case 4:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周五</li><li>周六</li><li>周日</li><li>周一</li><li>周二</li>');
+								break;
+							}
+						case 5:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周六</li><li>周日</li><li>周一</li><li>周二</li><li>周三</li>');
+								break;
+							}
+						case 6:
+							{
+								$('.content-roll-tab').html('<li>昨天</li><li class="content-roll-tab-active">今天</li><li>周日</li><li>周一</li><li>周二</li><li>周三</li><li>周四</li>');
+								break;
+							}
+
+					}
+					// 			日期内容切换
+					$('.content-roll-tab li').click(function() {
+
+						$('.content-roll-tab li').removeClass('content-roll-tab-active');
+						$(this).addClass('content-roll-tab-active');
+						var eqi = $(this).index();
+						console.log(eqi);
+						var roll_W = parseInt($('.content-roll>li').width());
+						$('.content-roll').css({
+							'marginLeft': -eqi * roll_W + 'px'
+						})
+					});
+					// 			关注热门切换
+					$('.nav-change li').click(function() {
+						var eqx = $(this).index();
+						console.log(eqx);
+						$('.nav-change li').removeClass('nav-change-active');
+						$(this).addClass('nav-change-active');
+						if(eqx == 0) {
+							$('.content-box-one').show();
+							$('.content-box-two').hide();
+						} else {
+							$('.content-box-one').hide();
+							$('.content-box-two').show();
+						}
+
+					});
+					// 			开启提醒关闭
+					$('.nav-cuo i').click(function() {
+						$('.nav-tag').fadeOut();
+					});
+				});
+			</script>
+
+		</body>
+
 </html>

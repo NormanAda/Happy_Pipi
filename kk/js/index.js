@@ -1,0 +1,20 @@
+$(function(){
+	//返回顶部
+	$(window).scroll(function(){
+	    if($(window).scrollTop()==0){
+    	    $('.return-top').hide();
+        }else{
+    	    $('.return-top').show();
+        }
+    });
+    // 点赞
+    $('.icon-zan').parent('span').click(function(){
+        if($(this).find('i').hasClass('icon-has-zan')){
+            $(this).find('i').removeClass('icon-has-zan');
+            $(this).css({'color':'#9C9C9C'});
+        }else{
+            $(this).find('i').addClass('icon-has-zan');
+            $(this).css({'color':'#FDE23D'});
+        }
+    });
+});
